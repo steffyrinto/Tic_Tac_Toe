@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+   background-image: url('Capture.jpg');
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: cover; 
+}
+	
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  
+  left: 0;
+  background-color: gold;
+  overflow-x: hidden;
+  transition: 0.5s;
+	top: 0em;
+  padding-top: 35px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #000;
+  display: block;
+  transition: 0.3s;
+	margin-top:42px;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+	h1 {
+    color: black;
+    font-size: 50px;
+    align-content: center;
+
+}
+	button {
+    background: blue;
+    color: #fff;
+    font-weight: bold;
+    border: 1px solid #000;
+    cursor: pointer;
+    width: 200px;
+    height: 40px;
+    font-size: 22px;
+    display: block;
+    margin: 10px auto;
+}
+
+</style>
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="instruction_index.html">Instruction</a>
+  <a href="page2 index.html">Start Game</a>
+  
+  
+
+
+</div>
+<center><h1>TIC TAC TOE</h1></center>
+
+<span style="font-size:50px;cursor:pointer;color:white;margin-top: 1em;position: absolute;
+    top: -40px;left:30px" onclick="openNav()">&#9776; Options</span>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+   
+</body>
+</html> 

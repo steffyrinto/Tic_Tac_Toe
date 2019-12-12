@@ -1,0 +1,48 @@
+<!DOCTYPE html>    				<!--Defines the document type-->
+    <html>						<!--Defines the root of an HTML document-->
+
+    <head>						<!--Defines information about the document-->
+
+        <title>Tic Tae Toe</title>
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+       <center><h1>Tic Tac Toe</h1></center>
+        <div class="container" id="main">
+           
+           <h3>Player 1: <bold>X  </bold>     &nbsp;&nbsp;Player 2: <bold>O</bold></h3>
+            <span id="turn">Play</span>
+            <div class="box" id="box1"></div>
+            <div class="box" id="box2"></div>
+            <div class="box" id="box3"></div>
+            <div class="box" id="box4"></div>
+            <div class="box" id="box5"></div>
+            <div class="box" id="box6"></div>
+            <div class="box" id="box7"></div>
+            <div class="box" id="box8"></div>
+            <div class="box" id="box9"></div>
+
+        </div>
+        
+   
+        <button onclick="replay()">Play Again</button>
+        
+        
+        <section align="center" id="popup">
+                <p id="text">text</p>
+                <button id="popupbutton" onclick="window.location.href = 'page1 index.html';">Ok</button>
+            </section>
+            
+            <section id="overlay"></section>
+
+        <script src="game.js"></script>
+
+
+
+
+
+    </body>
+
+    </html>
